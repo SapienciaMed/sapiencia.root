@@ -1,0 +1,31 @@
+<single-spa-router>
+  <route path="login">
+    <application name="core"></application>
+  </route>
+  <route path="recovery-password">
+    <application name="core"></application>
+  </route>
+    <route default>
+      <div class="main">
+        <div id="sidebar">
+          <application name="sidebar"></application>
+        </div>
+        <div class="core-container full-vh">
+          <header class="header">
+            <application name="header"></application>
+          </header>
+          <main class="full-height">
+            <route default="true">
+              <application name="core"></application>
+            </route>
+            <route path="core">
+              <application name="core"></application>
+            </route>
+            <route path="fnc">
+              <application name="fnc"></application>
+            </route>
+          </main>
+        </div>
+      </div>
+    </route>
+</single-spa-router>
