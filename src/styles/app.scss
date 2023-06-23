@@ -16,6 +16,7 @@ body {
     opacity: 0;
     transition: ease-out 0.2s;
     overflow: hidden;
+    display:none;
     &.show-bar {
         display: block;
         z-index: 1000;
