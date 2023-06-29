@@ -50,17 +50,33 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "@sapiencia/root-config": "//localhost:9000/sapiencia-root-config.js",
-        "header": "http://localhost:9001/sapiencia-header.js",
-        "sidebar": "http://localhost:9002/sapiencia-sidebar.js",
-        "core": "http://localhost:9003/sapiencia-core.js",
+        "@sapiencia/root-config": "https://sapiencia-root-ukyunq2uxa-uc.a.run.app/sapiencia-root-config.js",
+        "header": "https://sapiencia-header-front-ukyunq2uxa-uc.a.run.app/sapiencia-header.js",
+        "sidebar": "https://sapiencia-sidebar-front-ukyunq2uxa-uc.a.run.app/sapiencia-sidebar.js",
+        "core": "https://sapiencia-core-front-ukyunq2uxa-uc.a.run.app/sapiencia-core.js",
         "payroll": "http://localhost:9005/sapiencia-payroll.js",
         "financial": "http://localhost:9004/sapiencia-financial.js"
         
       }
     }
   </script>
-  <% } %>
+  <% } else { %>
+    <script type="systemjs-importmap">
+
+    "imports": {
+      "@sapiencia/root-config": "https://sapiencia-root-ukyunq2uxa-uc.a.run.app/sapiencia-root-config.js",
+      "header": "https://sapiencia-header-front-ukyunq2uxa-uc.a.run.app/sapiencia-header.js",
+      "sidebar": "https://sapiencia-sidebar-front-ukyunq2uxa-uc.a.run.app/sapiencia-sidebar.js",
+      "core": "https://sapiencia-core-front-ukyunq2uxa-uc.a.run.app/sapiencia-core.js",
+      "payroll": "http://localhost:9005/sapiencia-payroll.js",
+      "financial": "http://localhost:9004/sapiencia-financial.js"
+      
+    }
+  </script>
+    <% } %>
+
+
+
 
   <!--
     If you need to support Angular applications, uncomment the script tag below to ensure only one instance of ZoneJS is loaded
