@@ -4,6 +4,6 @@
   "compilerOptions": {
     "declarationDir": "dist"
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "libs"],
   "exclude": ["src/**/*.test*"]
 }
