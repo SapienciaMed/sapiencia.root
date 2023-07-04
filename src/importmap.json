@@ -4,7 +4,11 @@
     "header": "https://sapiencia-header-front-ukyunq2uxa-uc.a.run.app/sapiencia-header.js",
     "sidebar": "https://sapiencia-sidebar-front-ukyunq2uxa-uc.a.run.app/sapiencia-sidebar.js",
     "core": "https://sapiencia-core-front-ukyunq2uxa-uc.a.run.app/sapiencia-core.js",
-    "payroll": "http://localhost:9005/sapiencia-payroll.js",
-    "financial": "http://localhost:9004/sapiencia-financial.js"
+    "payroll": "https://sapiencia-payroll-front-ukyunq2uxa-uc.a.run.app",
+    "financial": "https://sapiencia-financial-front-ukyunq2uxa-uc.a.run.app"
   }
 }
+
+
+
+

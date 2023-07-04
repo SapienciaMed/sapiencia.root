@@ -18,8 +18,10 @@
   <!--
     This CSP allows any SSL-enabled host and for arbitrary eval(), but you should limit these directives further to increase your app's security.
     Learn more about CSP policies at https://content-security-policy.com/#directive
+    AKIVE: Descomentar y ajustar en productivo para evitar inyecciones de codigo. 
   -->
   <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: localhost:*; script-src 'unsafe-inline' 'unsafe-eval' https: localhost:*; connect-src https: localhost:* ws://localhost:*; style-src 'unsafe-inline' https:; object-src 'none';"> -->
+  
   <meta name="importmap-type" content="systemjs-importmap" />
   <!-- If you wish to turn off import-map-overrides for specific environments (prod), uncomment the line below -->
   <!-- More info at https://github.com/joeldenning/import-map-overrides/blob/master/docs/configuration.md#domain-list -->
@@ -51,13 +53,12 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "@sapiencia/root-config": "http://localhost:9000/sapiencia-root-config.js",
-        "header": "http://localhost:9001/sapiencia-header.js",
-        "sidebar": "http://localhost:9002/sapiencia-sidebar.js",
-        "core": "http://localhost:9003/sapiencia-core.js",
-        "payroll": "http://localhost:9005/sapiencia-payroll.js",
-        "financial": "http://localhost:9004/sapiencia-financial.js"
-        
+        "@sapiencia/root-config": "https://sapiencia-root-ukyunq2uxa-uc.a.run.app/sapiencia-root-config.js",
+        "header": "https://sapiencia-header-front-ukyunq2uxa-uc.a.run.app/sapiencia-header.js",
+        "sidebar": "https://sapiencia-sidebar-front-ukyunq2uxa-uc.a.run.app/sapiencia-sidebar.js",
+        "core": "https://sapiencia-core-front-ukyunq2uxa-uc.a.run.app/sapiencia-core.js",
+        "payroll": "https://sapiencia-payroll-front-ukyunq2uxa-uc.a.run.app",
+        "financial": "https://sapiencia-financial-front-ukyunq2uxa-uc.a.run.app"
       }
     }
   </script>

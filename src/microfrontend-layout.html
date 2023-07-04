@@ -11,27 +11,27 @@
   <route path="change-password">
     <application name="core"></application>
   </route>
-    <route default>
-      <div class="main">
-        <div id="sidebar">
-          <application name="sidebar"></application>
-        </div>
-        <div class="core-container full-vh">
-          <header class="header">
-            <application name="header"></application>
-          </header>
-          <main class="full-height">
-            <route default="true">
-              <application name="core"></application>
-            </route>
-            <route path="core">
-              <application name="core"></application>
-            </route>
-            <route path="fnc">
-              <application name="fnc"></application>
-            </route>
-          </main>
-        </div>
+  <route default>
+    <div class="main">
+      <div id="sidebar">
+        <application name="sidebar"></application>
       </div>
-    </route>
+      <div class="core-container full-vh">
+        <header class="header">
+          <application name="header"></application>
+        </header>
+        <main class="full-height">
+          <route default="true">
+            <application name="core"></application>
+          </route>
+          <route path="payroll">
+            <application name="payroll"></application>
+          </route>
+          <route path="financial">
+            <application name="financial"></application>
+          </route>
+        </main>
+      </div>
+    </div>
+  </route>
 </single-spa-router>
