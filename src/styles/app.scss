@@ -45,6 +45,14 @@ body {
     height: 100%;
 }
 
+.mobile {
+    display: contents;
+}
+
+.desktop {
+    display: none;
+}
+
 div[id="single-spa-application:core"] {
     height: 100%;
 }
@@ -69,5 +77,11 @@ div[id="single-spa-application:header"] {
     }
     .core-container {
         grid-template-rows: 5em calc(100% - 5em);
+    }
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: contents;
     }
 }
