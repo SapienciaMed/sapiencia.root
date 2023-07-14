@@ -1,14 +1,15 @@
 {
   "imports": {
+    "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
+    "react": "https://unpkg.com/react@18/umd/react.production.min.js",
+    "react-dom": "https://unpkg.com/react-dom@18/umd/react-dom.production.min.js",
+    "rxjs": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.6.3/system/es2015/rxjs.min.js",
+    "rxjs/operators": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.6.3/system/es2015/rxjs-operators.min.js",
     "@sapiencia/root-config": "https://sapiencia-root-ukyunq2uxa-uc.a.run.app/sapiencia-root-config.js",
-    "header": "https://sapiencia-header-front-ukyunq2uxa-uc.a.run.app/sapiencia-header.js",
-    "sidebar": "https://sapiencia-sidebar-front-ukyunq2uxa-uc.a.run.app/sapiencia-sidebar.js",
-    "core": "https://sapiencia-core-front-ukyunq2uxa-uc.a.run.app/sapiencia-core.js",
-    "payroll": "https://sapiencia-payroll-front-ukyunq2uxa-uc.a.run.app/sapiencia-payroll.js",
-    "financial": "https://sapiencia-financial-front-ukyunq2uxa-uc.a.run.app/sapiencia-financial.js"
+    "@sapiencia/header": "https://sapiencia-header-front-ukyunq2uxa-uc.a.run.app/sapiencia-header.js",
+    "@sapiencia/sidebar": "https://sapiencia-sidebar-front-ukyunq2uxa-uc.a.run.app/sapiencia-sidebar.js",
+    "@sapiencia/core": "https://sapiencia-core-front-ukyunq2uxa-uc.a.run.app/sapiencia-core.js",
+    "@sapiencia/payroll": "https://sapiencia-payroll-front-ukyunq2uxa-uc.a.run.app/sapiencia-payroll.js",
+    "@sapiencia/financial": "https://sapiencia-financial-front-ukyunq2uxa-uc.a.run.app/sapiencia-financial.js"
   }
 }
-
-
-
-

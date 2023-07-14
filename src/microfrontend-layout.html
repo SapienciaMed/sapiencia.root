@@ -1,34 +1,70 @@
 <single-spa-router>
   <route path="login">
-    <application name="core"></application>
+    <application
+      name="@sapiencia/core"
+      loader="appMessage"
+      error="appMessage"
+    ></application>
   </route>
   <route path="recovery-password">
-    <application name="core"></application>
+    <application
+      name="@sapiencia/core"
+      loader="appMessage"
+      error="appMessage"
+    ></application>
   </route>
   <route path="change-password-recovery">
-    <application name="core"></application>
+    <application
+      name="@sapiencia/core"
+      loader="appMessage"
+      error="appMessage"
+    ></application>
   </route>
   <route path="change-password">
-    <application name="core"></application>
+    <application
+      name="@sapiencia/core"
+      loader="appMessage"
+      error="appMessage"
+    ></application>
   </route>
   <route default>
     <div class="main">
       <div id="sidebar">
-        <application name="sidebar"></application>
+        <application
+          name="@sapiencia/sidebar"
+          loader="appMessage"
+          error="appMessage"
+        ></application>
       </div>
       <div class="core-container full-vh">
         <header class="header">
-          <application name="header"></application>
+          <application
+            name="@sapiencia/header"
+            loader="appMessage"
+            error="appMessage"
+          ></application>
         </header>
         <main class="full-height">
           <route default="true">
-            <application name="core"></application>
+            <application
+              name="@sapiencia/core"
+              loader="appMessage"
+              error="appMessage"
+            ></application>
           </route>
           <route path="nomina">
-            <application name="payroll"></application>
+            <application
+              name="@sapiencia/payroll"
+              loader="appMessage"
+              error="appMessage"
+            ></application>
           </route>
           <route path="gestion-financiera">
-            <application name="financial"></application>
+            <application
+              name="@sapiencia/financial"
+              loader="appMessage"
+              error="appMessage"
+            ></application>
           </route>
         </main>
       </div>

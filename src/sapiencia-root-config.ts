@@ -7,7 +7,15 @@ import {
 } from "single-spa-layout";
 import microfrontendLayout from "./microfrontend-layout.html";
 
-const routes = constructRoutes(microfrontendLayout);
+const routes = constructRoutes(microfrontendLayout, {
+  loaders: {
+    appMessage: "<div>Cargando...</div>",
+  },
+  props: {},
+  errors: {
+    appMessage: "<div>Error</div>",
+  },
+});
 const applications = constructApplications({
   routes,
   loadApp({ name }) {
